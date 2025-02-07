@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <header>
         <nav>
-        <ol>
+        <ol class="nav-list">
             <a href="#Home"><li>Home</li></a>
             <a href="#Section1"><li>About</li></a>
             <a href="#Section2"><li>Work</li></a>
@@ -19,16 +19,16 @@
         </ol>
         </nav>
     </header>
-    <section>
+    <section class="about-me">
         <header>
         <h1 id="Section1">ABOUT ME</h1>
-        <img src="me.JPG" alt="A picture of a young man" width="400px" height="400px">
-        <p>
+        <img src="me.JPG" alt="A picture of a young man">
+        <p> 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus modi repudiandae excepturi quisquam, quas, asperiores eos cumque molestiae minus doloribus delectus, debitis sunt dolorem. Ex nobis sed asperiores quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos autem molestias dolor ab laudantium quia minus exercitationem reprehenderit voluptatum aperiam, eos esse odit, eum quibusdam. Ea qui in repellat!
         </p>
         </header>
     </section>
-    <section>
+    <section class="work">
         <header>
             <h1 id="Section2">WORK</h1>
             <p>
@@ -36,12 +36,12 @@
             </p>
         </header>
     </section>
-        <section>
+        <section class="Resume">
             <h1 id="Section3">RESUME</h1>
-            <table width="50%", border="1px" >
+            <table class="CV">
                 <tr>
                     <th>
-                        <img src="me.JPG" alt="Photo" width="25%" height="25%" style="margin-top: 10px;"><br>
+                        <img src="me.JPG" alt="Photo" width="20%" height="20%" style="margin-top: 10px;"><br>
                         <h1>Emmanuel Mwangi</h1>
                         Email:abc@gmail.com <br>
                         Phone No: 0321689031
@@ -64,18 +64,20 @@
                 </td>
             </table>
         </section><br>
-        <form id="Contact">
+        <div class="form">
+        <form id="Contact" class="contact">
             <label for="First Name">First Name</label><br>
-            <input type="text" name="First Name" id="First Name"><br>
+            <input type="text" name="First Name" id="First Name" placeholder="First Name...."><br>
             <label for="Last Name">Last Name</label><br>
-            <input type="text" name="Last Name" id="Last Name"><br>
+            <input type="text" name="Last Name" id="Last Name" placeholder="Last Name..."><br>
             <label for="Email">Email</label><br>
-            <input type="email" name="Email" id="Email"><br>
+            <input type="email" name="Email" id="Email" placeholder="Enter email...." required><br>
             <label for="Review">Review:</label><br>
             <textarea id="Review" name="Review" rows="4" cols="50">
-        
             </textarea>
-        </form><br>
+        </form>
+         <input type="button" value="Submit">
+        </div>
         <footer>
             &copy;Emmanuel Mwangi
         </footer>
